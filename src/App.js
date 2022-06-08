@@ -1,5 +1,10 @@
+
+import Numpad from "./Numpad"
+
 export default function App(){
-  return (
-    <h1>This is teh App Component</h1>
-  )
+    return (
+        <div>
+            <Numpad />
+        </div>
+    )
 }
