@@ -2,7 +2,7 @@ import Button from './blocks/Button'
 
 export default function Numpad() {
   return (
-    <div className="flex">
+    <div className="flex bg-orange-400">
       <div>
         <Button number={1} />
         <Button number={4} />
