@@ -1,4 +1,4 @@
-import Sign from "./Sign"
+import Sign from "./blocks/Sign"
 
 export default function Signpad(){
     return(

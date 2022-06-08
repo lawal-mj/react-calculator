@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from './blocks/Button'
 
 export default function Numpad() {
   return (

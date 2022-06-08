@@ -1,7 +1,7 @@
 
-import Numpad from "./Numpad"
-import Signpad from "./Signpad"
-import InputBox from "./InputBox"
+import Numpad from "./components/Numpad"
+import Signpad from "./components/Signpad"
+import InputBox from "./components/InputBox"
 
 export default function App(){
     return (
