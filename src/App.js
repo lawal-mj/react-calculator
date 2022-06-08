@@ -5,7 +5,7 @@ import InputBox from "./components/InputBox"
 
 export default function App(){
     return (
-        <div className="inline-block border-2 border-orange-400 bg-orange-400">
+        <div className="inline-block border-2 border-orange-400 bg-orange-400 mt-9">
             <InputBox />
             <Signpad />
             <Numpad />
