@@ -1,6 +1,6 @@
 export default function Numpad(){
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col text-2xl">
 
             <div className="flex w-72 h-10 flex-auto">
                 <div className="bg-blue-700 grow flex items-center justify-center border">+</div>
