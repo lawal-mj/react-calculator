@@ -1,6 +1,6 @@
 export default function InputBox(props){
     return (
-        <div>
+        <div className="box-1">
             {props.input}
         </div>
     )

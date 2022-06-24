@@ -1,6 +1,6 @@
-export default function OutputBox(){
+export default function OutputBox(props){
     return (
-        <div>
+        <div className="box-2">
             {props.output}
         </div>
     )
