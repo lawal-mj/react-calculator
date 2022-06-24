@@ -2,9 +2,9 @@
 // THIS IS A VERY UNCONVENTIONAL CALCULATOR, LOGIC HASNT BEEN MADE EFFECTIVE YET SO BEAR WITH ME😢
 
 
-import Numpad from "./Numpad"
-import InputBox from "./InputBox"
-import OutputBox from "./OutputBox"
+import Numpad from "./Components/Numpad"
+import InputBox from "./Components/InputBox"
+import OutputBox from "./Components/OutputBox"
 import { useState } from "react"
 
 export default function App(){
