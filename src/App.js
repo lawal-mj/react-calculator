@@ -28,20 +28,33 @@ export default function App(){
     }
 
     // TAKES THE EVENT AS A PARAMETER
+    // stores the old value in a variable, takes note of the sign by storing it in a state and resets the input value to zero
     function signAction(e){
         switch (e.target.textContent) {
             case "+":
+                storeOldValue(inputValue)
+                setInputValue(0)
                 setCurrentSign("+")
                 break;
+
             case "-":
+                storeOldValue(inputValue)
+                setInputValue(0)
                 setCurrentSign("-")
                 break;
-            case "*":
-                setCurrentSign("*")
-                break;
+
             case "/":
+                storeOldValue(inputValue)
+                setInputValue(0)
                 setCurrentSign("/")
                 break;
+
+            case "*":
+                storeOldValue(inputValue)
+                setInputValue(0)
+                setCurrentSign("*")
+                break;
+
             default:
                 console.log("Error")
                 break;
