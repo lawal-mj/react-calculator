@@ -1,3 +1,7 @@
+
+// THIS IS A VERY UNCONVENTIONAL CALCULATOR, LOGIC HASNT BEEN MADE EFFECTIVE YET SO BEAR WITH ME😢
+
+
 import Numpad from "./Numpad"
 import InputBox from "./InputBox"
 import OutputBox from "./OutputBox"
@@ -11,7 +15,7 @@ export default function App(){
         const [ outputValue, setOutputValue ] = useState("")
         const [ sign, setSign ] = useState("+")
 
-        
+
 
     /*  2.State Functions  */
 
