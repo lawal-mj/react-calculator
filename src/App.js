@@ -63,11 +63,18 @@ export default function App(){
     
     
     function equalsTo(){
-        console.log("the equals sign")
+        switch (sign) {
+            case "+":
+                console.log( Number(oldValue) + Number(inputValue) )
+                break;
+        
+            default:
+                break;
+        }
     }
 
 
-    console.log(sign)
+    // console.log(sign)
 
     return(
         <div>
