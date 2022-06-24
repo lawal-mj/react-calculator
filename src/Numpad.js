@@ -21,6 +21,7 @@ export default function Numpad(props) {
         <button onClick={props.sign}>*</button>
         <button onClick={props.sign}>/</button>
         <button onClick={props.equals}>=</button>
+        <button onClick={props.delete}>del</button>
 
       </div>
     </div>

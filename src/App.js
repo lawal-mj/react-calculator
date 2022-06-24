@@ -9,6 +9,8 @@ export default function App(){
     const [ oldValue, setOldValue ] = useState(0)
     const [ sign, setSign ] = useState("+")
 
+    const [ outputValue, setOutputValue ] = useState("")
+
     function updateInput(e){
         setInputValue(inputValue + e.target.textContent)
     }
@@ -65,7 +67,23 @@ export default function App(){
     function equalsTo(){
         switch (sign) {
             case "+":
-                console.log( Number(oldValue) + Number(inputValue) )
+                setOutputValue (Number(oldValue) + Number(inputValue) )
+                setInputValue(0)
+                break;
+        
+            case "-":
+                setOutputValue (Number(oldValue) - Number(inputValue) )
+                setInputValue(0)
+                break;
+        
+            case "*":
+                setOutputValue (Number(oldValue) * Number(inputValue) )
+                setInputValue(0)
+                break;
+        
+            case "/":
+                setOutputValue (Number(oldValue) / Number(inputValue) )
+                setInputValue(0)
                 break;
         
             default:
@@ -74,13 +92,26 @@ export default function App(){
     }
 
 
+
+    function deleteNumber(){
+        const inputValueToString = inputValue.toString(); 
+        let newString = "";
+        for (let i =0; i < inputValueToString.length; i++){
+            if (i < inputValueToString.length -1 ){
+                newString = newString +  inputValueToString[i]
+            }           
+        }
+        setInputValue(newString)        
+    }
+
+
     // console.log(sign)
 
     return(
         <div>
             <InputBox input={inputValue} />
-            <OutputBox />
-            <Numpad sign={signAction} update={updateInput} equals={equalsTo} />
+            <OutputBox output={outputValue} />
+            <Numpad sign={signAction} update={updateInput} equals={equalsTo} delete={deleteNumber} />
         </div>
     )
 }
