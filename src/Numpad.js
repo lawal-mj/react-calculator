@@ -20,7 +20,7 @@ export default function Numpad(props) {
         <button onClick={props.sign}>-</button>
         <button onClick={props.sign}>*</button>
         <button onClick={props.sign}>/</button>
-        <button onClick={props.sign}>=</button>
+        <button onClick={props.equals}>=</button>
 
       </div>
     </div>
