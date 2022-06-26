@@ -122,7 +122,7 @@ export default function App(){
 
 
     return(
-        <div className="w-72 font-bold mx-auto my-16">
+        <div className="w-72 font-bold mx-auto my-16 font-Poppins">
             <InputBox input={inputValue} />
             <OutputBox output={outputValue} />
             <Numpad sign={signAction} update={updateInput} equals={equalsTo} delete={deleteNumber} clear={clearCalculator} />
