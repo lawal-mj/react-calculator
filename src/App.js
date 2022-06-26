@@ -12,7 +12,7 @@ export default function App(){
     /*  1.State Variables  */    
         const [ inputValue, setInputValue ] = useState(0)
         const [ oldValue, setOldValue ] = useState(0)
-        const [ outputValue, setOutputValue ] = useState("")
+        const [ outputValue, setOutputValue ] = useState(0)
         const [ sign, setSign ] = useState("+")
 
 
@@ -116,7 +116,7 @@ export default function App(){
 
 
     return(
-        <div>
+        <div className="w-72 font-bold mx-auto my-16">
             <InputBox input={inputValue} />
             <OutputBox output={outputValue} />
             <Numpad sign={signAction} update={updateInput} equals={equalsTo} delete={deleteNumber} />
