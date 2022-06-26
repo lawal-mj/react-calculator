@@ -113,13 +113,19 @@ export default function App(){
             setInputValue(newString)        
         }
 
+        // sets the input and output values to zero 
+        function clearCalculator(){
+            setInputValue(0)
+            setOutputValue(0)
+        }
+
 
 
     return(
         <div className="w-72 font-bold mx-auto my-16">
             <InputBox input={inputValue} />
             <OutputBox output={outputValue} />
-            <Numpad sign={signAction} update={updateInput} equals={equalsTo} delete={deleteNumber} />
+            <Numpad sign={signAction} update={updateInput} equals={equalsTo} delete={deleteNumber} clear={clearCalculator} />
         </div>
     )
 }

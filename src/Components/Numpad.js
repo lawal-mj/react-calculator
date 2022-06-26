@@ -3,7 +3,7 @@ export default function Numpad(props) {
     <div className="flex gap-y-4 flex-col bg-slate-900 w-max p-6 text-2xl rounded-b-2xl">
 
       <div className="flex gap-x-4">
-        <button className="bg-yellow-200 w-12 h-12 rounded-xl">AC</button>
+        <button className="bg-yellow-200 w-12 h-12 rounded-xl" onClick={props.clear}>AC</button>
         <button className="bg-yellow-200 w-12 h-12 rounded-xl">+/-</button>
         <button className="bg-yellow-200 w-12 h-12 rounded-xl">%</button>
         <button className="bg-yellow-200 w-12 h-12 rounded-xl" onClick={props.sign}>/</button>
