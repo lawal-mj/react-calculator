@@ -33,7 +33,7 @@ export default function Numpad(props) {
       <div className="flex gap-x-4">
         <button className="bg-yellow-200 w-12 h-12 rounded-xl" onClick={props.delete}>B</button>
         <button className="bg-red-200 w-12 h-12 rounded-xl" onClick={props.update}>0</button>
-        <button className="bg-red-200 w-12 h-12 rounded-xl">6</button>
+        <button className="bg-red-200 w-12 h-12 rounded-xl">.</button>
         <button className="bg-yellow-200 w-12 h-12 rounded-xl" onClick={props.equals}>=</button>
       </div>
 
